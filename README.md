@@ -1,7 +1,11 @@
 karma-jasmine-jquery
 ====================
 
-Jasmine-jquery plugin for Jasmine in Karma.
+## This Fork
+It's one of forks implementing [PR](https://github.com/bessdsv/karma-jasmine-jquery/pull/16) while the upstream repo 
+is left unmaintained, removing obsolete and vulnerable extra dependencies.
+
+## Jasmine-jquery plugin for Jasmine in Karma.
 
 It karma adapter for
 + https://github.com/velesin/jasmine-jquery
@@ -11,7 +15,7 @@ It karma adapter for
 Install the plugin from npm:
 
 ```sh
-$ npm install karma-jasmine-jquery
+$ npm install @artemv/karma-jasmine-jquery
 ```
 
 ## Attention
