@@ -1,5 +1,5 @@
 {
-  "name": "karma-jasmine-jquery",
+  "name": "@artemv/karma-jasmine-jquery",
   "version": "0.1.1",
   "description": "Jasmine-jquery plugin for Jasmine in karma",
   "main": "lib/index.js",
@@ -9,7 +9,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bessdsv/karma-jasmine-jquery.git"
+    "url": "https://github.com/artemv/karma-jasmine-jquery.git"
   },
   "keywords": [
     "karma",
