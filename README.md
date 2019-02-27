@@ -12,10 +12,10 @@ It karma adapter for
 
 ## Installation
 
-Install the plugin from npm:
+Install the plugin from Github:
 
 ```sh
-$ npm install @artemv/karma-jasmine-jquery
+$ yarn add --dev "artemv/karma-jasmine-jquery#^0.1.2-pre.1"
 ```
 
 ## Attention
