@@ -1,8 +1,8 @@
-karma-jasmine-jquery
+@usertesting/karma-jasmine-jquery
 ====================
 
 ## This Fork
-It's one of forks implementing [PR](https://github.com/bessdsv/karma-jasmine-jquery/pull/16) while the upstream repo 
+It's one of forks implementing [PR](https://github.com/bessdsv/karma-jasmine-jquery/pull/16) while the upstream repo
 is left unmaintained, removing obsolete and vulnerable extra dependencies.
 
 ## Jasmine-jquery plugin for Jasmine in Karma.
@@ -15,35 +15,34 @@ It karma adapter for
 Install the plugin from Github:
 
 ```sh
-$ yarn add --dev "artemv/karma-jasmine-jquery#^0.1.2-pre.1"
+$ yarn add -D "@usertesting/karma-jasmine-jquery"
 ```
 
 ## Attention
-karma-jasmine-jquery has a dependency on jasmine, so you should use `karma-jasmine` as well before `karma-jasmine-jquery`. Please note the followings.
+@usertesting/karma-jasmine-jquery has a dependency on jasmine, so you should use `karma-jasmine` as well before `karma-jasmine-jquery`. Please note the followings.
 + https://github.com/karma-runner/karma-jasmine
 
 This plugin will only work for version karma-jasmine 2.0 and above.
 
 ## Usage
-karma will autoload all plugins, whose name start with `karma-`, you can import karma-jasmine-jquery plugins manually. Please refer to http://karma-runner.github.io/0.12/config/plugins.htmt for more details. 
 
 ```js
 // karma.conf.js
 module.exports = function(config) {
   config.set({
-
+      plugins: ['@usertesting/karma-jasmine-jquery']
       frameworks: ['jasmine-jquery','jasmine']
       //...
    })
 }
 ```
 
-The order('jasmine-jquery','jasmine') is important since it affects the order in which the files will be included to karma. Right order - reverse as karma works on the principle of LIFO stack. 
+The order('jasmine-jquery','jasmine') is important since it affects the order in which the files will be included to karma. Right order - reverse as karma works on the principle of LIFO stack.
 
 ## Information
-This plugin already includes jquery version 2.1.1, it is used for the plugin. 
-However, in the project, you can use a version of jquery (it can be both below and above) and they will not interfere with each other. 
-When writing tests using jquery $ for the project, and to use jquery 2.1.1, use a global variable $j (it makes sense when you want to use when writing test jquery 2 opportunities that are not available in the current version of jquery used in your project, as I). 
+This plugin already includes jquery version 2.1.1, it is used for the plugin.
+However, in the project, you can use a version of jquery (it can be both below and above) and they will not interfere with each other.
+When writing tests using jquery $ for the project, and to use jquery 2.1.1, use a global variable $j (it makes sense when you want to use when writing test jquery 2 opportunities that are not available in the current version of jquery used in your project, as I).
 Example of use:
 
 ```js
