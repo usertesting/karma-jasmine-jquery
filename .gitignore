@@ -2,3 +2,4 @@
 node_modules/
 karma-jasmine-jquery.iml
 yarn-error.log
+.yarn/cache
